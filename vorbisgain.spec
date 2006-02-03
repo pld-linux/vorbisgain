@@ -42,7 +42,7 @@ ca³o¶æ by³a u¿yteczna.
 
 %build
 %configure \
-	%{?with_recursive:--enable-recursive} \
+	%{?with_recursive:--enable-recursive}
 
 %{__make}
 
