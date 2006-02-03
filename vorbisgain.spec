@@ -16,6 +16,7 @@ BuildRequires:	gawk
 BuildRequires:	grep
 BuildRequires:	libogg-devel
 BuildRequires:	libvorbis-devel
+BuildRequires:	unzip
 Requires:	libogg
 Requires:	libvorbis
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
