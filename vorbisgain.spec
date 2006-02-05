@@ -1,9 +1,9 @@
 #
 # Conditional build:
-%bcond_without	recursive		# build without recursive support
+%bcond_without	recursive	# build without recursive support
 #
 Summary:	Calculate the replay gain for Ogg Vorbis files
-Summary(pl):	Oblicz wska¼nik g³o¶no¶ci dla plików Ogg Vorbis
+Summary(pl):	Obliczanie wska¼nika g³o¶no¶ci dla plików Ogg Vorbis
 Name:		vorbisgain
 Version:	0.36
 Release:	1
@@ -13,12 +13,9 @@ Source0:	http://sjeng.org/ftp/vorbis/%{name}-%{version}.zip
 # Source0-md5:	3c9df5028fa395aa98fdf0f58a5187b0
 URL:		http://www.sjeng.org/vorbisgain.html
 BuildRequires:	gawk
-BuildRequires:	grep
 BuildRequires:	libogg-devel
 BuildRequires:	libvorbis-devel
 BuildRequires:	unzip
-Requires:	libogg
-Requires:	libvorbis
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -32,9 +29,9 @@ suggestion for it to be any useful.
 %description -l pl
 VorbisGain oblicza odczuwalny poziom d¼wiêku pliku Ogg Vorbis u¿ywaj±c
 algorytmu ReplayGain. VorbisGain nastêpnie zapisuje do komentarza
-(taga) pliku sugestiê, jak poziom g³o¶no¶ci powinien zostaæ zmieniony
-podczas odtwarzania, aby uzyskaæ spójn± g³o¶no¶æ pomiêdzy plikami.
-Jednak¿e to tylko rozwi±zuje po³owê problemu; odtwarzacz musi
+(znacznika) pliku sugestiê, jak poziom g³o¶no¶ci powinien zostaæ
+zmieniony podczas odtwarzania, aby uzyskaæ spójn± g³o¶no¶æ pomiêdzy
+plikami. Jednak¿e to tylko rozwi±zuje po³owê problemu; odtwarzacz musi
 podejmowaæ odpowiednie czynno¶ci na podstawie zawartej sugestii, aby
 ca³o¶æ by³a u¿yteczna.
 
