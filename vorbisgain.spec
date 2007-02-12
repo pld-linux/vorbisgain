@@ -3,7 +3,7 @@
 %bcond_without	recursive	# build without recursive support
 #
 Summary:	Calculate the replay gain for Ogg Vorbis files
-Summary(pl.UTF-8):   Obliczanie wskaźnika głośności dla plików Ogg Vorbis
+Summary(pl.UTF-8):	Obliczanie wskaźnika głośności dla plików Ogg Vorbis
 Name:		vorbisgain
 Version:	0.36
 Release:	1
