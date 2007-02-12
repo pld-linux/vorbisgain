@@ -3,7 +3,7 @@
 %bcond_without	recursive	# build without recursive support
 #
 Summary:	Calculate the replay gain for Ogg Vorbis files
-Summary(pl):	Obliczanie wska¼nika g³o¶no¶ci dla plików Ogg Vorbis
+Summary(pl.UTF-8):   Obliczanie wskaÅºnika gÅ‚oÅ›noÅ›ci dla plikÃ³w Ogg Vorbis
 Name:		vorbisgain
 Version:	0.36
 Release:	1
@@ -26,14 +26,14 @@ during playback, to get a uniform sound level. However, this only
 solves half the problem; the player application needs to act on that
 suggestion for it to be any useful.
 
-%description -l pl
-VorbisGain oblicza odczuwalny poziom d¼wiêku pliku Ogg Vorbis u¿ywaj±c
-algorytmu ReplayGain. VorbisGain nastêpnie zapisuje do komentarza
-(znacznika) pliku sugestiê, jak poziom g³o¶no¶ci powinien zostaæ
-zmieniony podczas odtwarzania, aby uzyskaæ spójn± g³o¶no¶æ pomiêdzy
-plikami. Jednak¿e to tylko rozwi±zuje po³owê problemu; odtwarzacz musi
-podejmowaæ odpowiednie czynno¶ci na podstawie zawartej sugestii, aby
-ca³o¶æ by³a u¿yteczna.
+%description -l pl.UTF-8
+VorbisGain oblicza odczuwalny poziom dÅºwiÄ™ku pliku Ogg Vorbis uÅ¼ywajÄ…c
+algorytmu ReplayGain. VorbisGain nastÄ™pnie zapisuje do komentarza
+(znacznika) pliku sugestiÄ™, jak poziom gÅ‚oÅ›noÅ›ci powinien zostaÄ‡
+zmieniony podczas odtwarzania, aby uzyskaÄ‡ spÃ³jnÄ… gÅ‚oÅ›noÅ›Ä‡ pomiÄ™dzy
+plikami. JednakÅ¼e to tylko rozwiÄ…zuje poÅ‚owÄ™ problemu; odtwarzacz musi
+podejmowaÄ‡ odpowiednie czynnoÅ›ci na podstawie zawartej sugestii, aby
+caÅ‚oÅ›Ä‡ byÅ‚a uÅ¼yteczna.
 
 %prep
 %setup -q
