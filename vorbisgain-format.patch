@@ -1,0 +1,19 @@
+--- vorbisgain-0.37/misc.c.orig	2004-01-03 22:17:28.000000000 +0100
++++ vorbisgain-0.37/misc.c	2024-05-28 22:06:08.761860103 +0200
+@@ -23,6 +23,7 @@
+ #else /* WIN32 */
+ #include <errno.h>
+ #include <ctype.h>
++#include <unistd.h>
+ 
+ #ifndef DISABLE_WINSIZE
+ 
+@@ -56,7 +57,7 @@ void file_error(const char* message, ...
+     vfprintf(stderr, message, args);
+     va_end(args);
+ 
+-    fprintf(stderr, strerror(err_num));
++    fputs(strerror(err_num), stderr);
+     fprintf(stderr, "\n");
+ }
+ 

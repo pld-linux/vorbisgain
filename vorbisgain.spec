@@ -1,17 +1,18 @@
 #
 # Conditional build:
-%bcond_without	recursive	# build without recursive support
+%bcond_without	recursive	# recursive processing support
 #
 Summary:	Calculate the replay gain for Ogg Vorbis files
 Summary(pl.UTF-8):	Obliczanie wskaźnika głośności dla plików Ogg Vorbis
 Name:		vorbisgain
-Version:	0.36
+Version:	0.37
 Release:	1
-License:	LGPL
+License:	GPL v2
 Group:		Applications/Sound
-Source0:	http://sjeng.org/ftp/vorbis/%{name}-%{version}.zip
-# Source0-md5:	3c9df5028fa395aa98fdf0f58a5187b0
-URL:		http://www.sjeng.org/vorbisgain.html
+Source0:	https://sjeng.org/ftp/vorbis/%{name}-%{version}.tar.gz
+# Source0-md5:	850b05a7b2b0ee67edb5a27b8c6ac3a2
+Patch0:		%{name}-format.patch
+URL:		https://www.sjeng.org/vorbisgain.html
 BuildRequires:	gawk
 BuildRequires:	libogg-devel
 BuildRequires:	libvorbis-devel
@@ -37,6 +38,7 @@ całość była użyteczna.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure \
@@ -56,5 +58,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc NEWS README
-%attr(755,root,root) %{_bindir}/*
-%{_mandir}/man1/*
+%attr(755,root,root) %{_bindir}/vorbisgain
+%{_mandir}/man1/vorbisgain.1*
